@@ -12,15 +12,9 @@
           transition: all 200ms ease;
 }
 
-
-
-
-
-
-
 html {
   padding: 2rem;
-  background: currentcolor url("../img/abstract-bg.svg") right bottom no-repeat;
+  background: currentcolor url("../img/grey_wash_wall.png");
   height: 100%;
   background-attachment: fixed;
   overflow-y: scroll;
@@ -45,6 +39,12 @@ h5,
 h6 {
   margin-top: 0;
 }
+h2 {
+  font-size: 24px;
+}
+
+
+
 p {
   margin-bottom: 1rem;
 }
@@ -53,15 +53,13 @@ h5{
 }
 
 a.list-group-item{
-  background-color: #BDB4B4;
+  background-color: #4B4B4E;
+  color: white;
 }
 
 a.list-group-item:hover {
-  background-color: #E7E4E5;
+  background-color: #CACAD0;
 }
-
-
-
 
 .navbar .navbar-brand,
 .navbar .navbar-nav > li > a {
@@ -70,7 +68,7 @@ a.list-group-item:hover {
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-nav > li > a:hover {
-  color: #4e9af3;
+  color: #29292A;
   background: none;
 }
 .navbar-nav > li > a:after {
@@ -107,17 +105,18 @@ a.list-group-item:hover {
 .jumbotron {
   background: none;
   margin-top: 75px;
-  margin-bottom: 75px;
+  margin-bottom: 25px;
 }
 .jumbotron h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 .jumbotron .lead {
   font-size: 32px;
 }
+
 @media (max-width: 992px) {
   .jumbotron h1 {
-    font-size: 72px;
+    font-size: 40px;
   }
 }
 @media (max-width: 768px) {
