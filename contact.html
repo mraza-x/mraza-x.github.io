@@ -3,13 +3,13 @@
 if ($_POST['submit']) {
 
   if (!$_POST['name']) {
-    $error="Please enter your name.";
+    $error.="Please enter your name.";
   }
   if (!$_POST['email']) {
-    $error="Please enter your email.";
+    $error.="Please enter your email.";
   }
   if (!$_POST['message']) {
-    $error="Please enter your message.";
+    $error.="Please enter your message.";
   }
   if ($error) {
     $result="There is an error.";
@@ -79,10 +79,13 @@ if ($_POST['submit']) {
               <div align="center">
               <h1>Contact Form</h1>
 
-              <?php echo $result;?>
+
 
 
               <p>Please send a message using the form below</p>
+
+              <?php echo $result; ?>
+
               </div>
               <form method="post" role="form">
 
