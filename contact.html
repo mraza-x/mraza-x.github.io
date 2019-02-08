@@ -1,3 +1,26 @@
+<?php
+
+if ($_POST['submit']) {
+
+  if (!$_POST['name']) {
+    $error="Please enter your name.";
+  }
+  if (!$_POST['email']) {
+    $error="Please enter your email.";
+  }
+  if (!$_POST['message']) {
+    $error="Please enter your message.";
+  }
+  if ($error) {
+    $result="There is an error.";
+  }
+
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -47,43 +70,48 @@
           </div><!-- /.container-fluid -->
         </nav>
 
-      
+
 
         <div class="page-contact container-fluid">
 
           <div class="row">
-            <div class="col-md-6">
-              <p>
-                I'm glad you've decided to contact me. <br>
-                Please provide the following information and click 'Submit'. <br>
-                Thank you.
-              </p>
-            </div>
-          </div>
+            <div class="contact-form col-md-6 col-md-offset-3">
+              <div align="center">
+              <h1>Contact Form</h1>
 
-          <div class="row">
-            <div class="contact-form col-md-6">
+              <?php echo $result;?>
 
-              <form role="form">
+
+              <p>Please send a message using the form below</p>
+              </div>
+              <form method="post" role="form">
+
                 <div class="form-group">
                   <label for="exampleInputName1">Name</label>
-                  <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter your name">
+                  <input type="text" name="name" class="form-control" placeholder="Your name">
                 </div>
+
                 <div class="form-group">
                   <label for="exampleInputEmail1">E-mail Address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your e-mail address">
+                  <input type="email" name="email" class="form-control" placeholder="Your e-mail address">
                 </div>
+
                 <div class="form-group">
                   <label for="exampleTextareaMessage1">Message</label>
-                  <textarea class="form-control" rows="3" id="exampleTextareaMessage1" placeholder="Enter your message"></textarea>
+                  <textarea class="form-control" rows="3" name="message" placeholder="Your message"></textarea>
                 </div>
+
+                <div align="center">
                 <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+
               </form>
 
             </div>
+            </div>
 
           </div>
-        </div>
+
 
         <footer class="container-fluid site-footer">
           <div class="row">
