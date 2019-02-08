@@ -14,7 +14,7 @@
 
 html {
   padding: 2rem;
-  background: currentcolor url("../img/prism.png");
+  background: currentcolor url("../img/random_grey_variations.png");
   height: 100%;
   background-attachment: fixed;
   overflow-y: scroll;
@@ -47,18 +47,23 @@ h2 {
 
 p {
   margin-bottom: 1rem;
+  font-size: 12px;
+  font-weight: lighter;
 }
 h5{
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 a.list-group-item{
-  background-color: #4B4B4E;
+  background-color: #2C3539;
   color: white;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
 }
 
 a.list-group-item:hover {
-  background-color: #CACAD0;
+  background-color: #BCC6CC;
 }
 
 .navbar .navbar-brand,
@@ -68,7 +73,7 @@ a.list-group-item:hover {
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-nav > li > a:hover {
-  color: #29292A;
+  color: #659EC7;
   background: none;
 }
 .navbar-nav > li > a:after {
